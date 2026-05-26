@@ -20,6 +20,19 @@ This project leverages AWS deep learning models to perform automated object dete
 ---
 
 ## 🏗️ Architecture & Workflow
+
+[ Raw Image ] ──> ( Amazon S3 Bucket ) ──> [ Python Script + Boto3 ]
+│
+▼
+[ Matplotlib Render ] <── [ Bounding Box Coordinates ] <── ( Amazon Rekognition )
+
+1. **Ingestion:** Raw images are staged securely in an **Amazon S3** repository.
+2. **Analysis:** A lightweight Python runtime dispatches the image payloads to **Amazon Rekognition** via the `detect_labels` API.
+3. **Authorization:** Granular access boundaries are enforced via **AWS IAM** service roles.
+4. **Visualization:** The engine parses spatial coordinate geometry from the API JSON response, leveraging **Matplotlib** to map and overlay high-contrast bounding boxes.
+
+---
+
 # Image Labels Generator
 
 A computer vision project that automatically detects objects in images and draws bounding boxes with confidence scores — powered by **AWS Rekognition** and **Python**.
