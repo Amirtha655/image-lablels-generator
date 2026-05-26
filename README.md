@@ -1,3 +1,25 @@
+# 👁️ Image Labels Generator
+
+A cloud-native computer vision pipeline that automatically processes images, detects multi-class objects, and dynamically renders spatial bounding boxes using deep learning.
+
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+---
+
+## ⚡ Overview
+
+This project leverages AWS deep learning models to perform automated object detection and spatial analysis on uploaded images. By coupling cloud storage with serverless vision APIs, it extracts high-confidence labels and maps bounding box coordinates natively onto local image renders.
+
+### 🎯 Key Use Cases
+* **Smart Surveillance:** Automated anomaly and object detection in real-time streams.
+* **Retail Inventory:** Automated item counting and category tagging for digital shelves.
+* **Accessibility Tech:** Generating descriptive spatial metadata for visually impaired users.
+
+---
+
+## 🏗️ Architecture & Workflow
 # Image Labels Generator
 
 A computer vision project that automatically detects objects in images and draws bounding boxes with confidence scores — powered by **AWS Rekognition** and **Python**.
